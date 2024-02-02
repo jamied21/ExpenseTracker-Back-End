@@ -8,7 +8,7 @@ using Moq;
 namespace UnitTests.ServiceTests
 {
     [TestFixture]
-	public class ExpenseCategoryTests
+	public class ExpenseCategoryServiceTests
 	{
 
 		private Mock<IExpenseCategoryRepository> mockExpensecategoryRepository;
