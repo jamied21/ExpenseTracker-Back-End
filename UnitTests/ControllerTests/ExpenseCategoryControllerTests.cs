@@ -44,6 +44,7 @@ namespace UnitTests.ControllerTests
             var okResult = result.Result as OkObjectResult;
             Assert.That(okResult.Value, Is.InstanceOf<List<ExpenseCategory>>());
             Assert.That(okResult.Value, Is.EqualTo(expenseCategoryList));
+            mockService.Verify(service => service.GetAllExpenseCategoriesAsync(), Times.Once);
         }
 
         [Test]
@@ -166,7 +167,7 @@ namespace UnitTests.ControllerTests
         }
 
         [Test]
-        public async Task CreateExpense_Exception_ReturnsStatusCode500()
+        public async Task CreateExpenseCategory_Exception_ReturnsStatusCode500()
         {
             // Arrange
             var newExpenseCategoy = new ExpenseCategory
@@ -185,7 +186,7 @@ namespace UnitTests.ControllerTests
             Assert.IsInstanceOf<ObjectResult>(result.Result);
             var objectResult = result.Result as ObjectResult;
             Assert.AreEqual(StatusCodes.Status500InternalServerError, objectResult.StatusCode);
-            Assert.AreEqual("Error creating new employee record", objectResult.Value);
+            Assert.AreEqual("Error creating new category record", objectResult.Value);
         }
 
         [Test]

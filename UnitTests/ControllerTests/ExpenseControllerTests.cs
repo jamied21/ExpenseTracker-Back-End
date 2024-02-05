@@ -48,6 +48,7 @@ namespace UnitTests.ControllerTests
             var okResult = result.Result as OkObjectResult;
             Assert.That(okResult.Value, Is.InstanceOf<List<Expense>>());
             Assert.That(okResult.Value, Is.EqualTo(expenseList));
+            mockExpenseService.Verify(service => service.GetAllExpensesAsync(), Times.Once);
         }
 
         [Test]
@@ -180,7 +181,7 @@ namespace UnitTests.ControllerTests
             Assert.IsInstanceOf<ObjectResult>(result.Result);
             var objectResult = result.Result as ObjectResult;
             Assert.AreEqual(StatusCodes.Status500InternalServerError, objectResult.StatusCode);
-            Assert.AreEqual("Error creating new employee record", objectResult.Value);
+            Assert.AreEqual("Error creating new expense record", objectResult.Value);
         }
 
         [Test]
