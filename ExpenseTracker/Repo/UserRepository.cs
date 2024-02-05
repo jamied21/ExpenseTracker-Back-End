@@ -1,6 +1,7 @@
 ﻿using System;
 using ExpenseTracker.Data;
 using ExpenseTracker.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace ExpenseTracker.Repo
 {
@@ -13,34 +14,53 @@ namespace ExpenseTracker.Repo
             _context = context;
         }
 
-        public Task<int> AddUserAsync(User user)
+        public async Task<IEnumerable<User>> GetAllUsersAsync()
         {
-            throw new NotImplementedException();
+            return await _context.Users.ToListAsync();
         }
 
-        public Task DeleteUserAsync(int userId)
+        public async Task<User> GetUserByIdAsync(int userId)
         {
-            throw new NotImplementedException();
+            return await _context.Users.SingleOrDefaultAsync(x => x.Id == userId);
         }
 
-        public Task<IEnumerable<User>> GetAllUsersAsync()
+        public async Task<User> GetUserByUsernameAsync(string username)
         {
-            throw new NotImplementedException();
+            return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
         }
 
-        public Task<User> GetUserByIdAsync(int userId)
+        public async Task<User> CreateUserAsync(User user)
         {
-            throw new NotImplementedException();
+            var result = await _context.Users.AddAsync(user);
+            await _context.SaveChangesAsync();
+            return result.Entity;
         }
 
-        public Task<User> GetUserByUsernameAsync(string username)
+        public async Task<User> UpdateUserAsync(User user)
         {
-            throw new NotImplementedException();
+            var result = await _context.Users.FindAsync(user.Id);
+            if (result != null)
+
+            {
+                result.Username = user.Username;
+                result.Password = user.Password;
+               
+                await _context.SaveChangesAsync();
+
+                return result;
+            }
+
+            return null;
         }
 
-        public Task UpdateUserAsync(User user)
+        public async Task DeleteUserAsync(int userId)
         {
-            throw new NotImplementedException();
+            var user = await _context.Users.FindAsync(userId);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+                await _context.SaveChangesAsync();
+            }
         }
     }
 }
