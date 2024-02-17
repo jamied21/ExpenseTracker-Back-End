@@ -28,10 +28,10 @@ namespace UnitTests.ControllerTests
         {
             //Arrange
             var expenseCategoryList = new List<ExpenseCategory> { new ExpenseCategory { Id = 1,
-                Name = "Alcohol", ExpenseId = 1
+                Name = "Alcohol"
 
                 }, new ExpenseCategory {Id = 2,
-                Name = "Food", ExpenseId =2
+                Name = "Food"
                  } };
 
             mockService.Setup(service => service.GetAllExpenseCategoriesAsync()).ReturnsAsync(expenseCategoryList);
@@ -71,8 +71,8 @@ namespace UnitTests.ControllerTests
             var expectedExpenseCategory = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Alcohol",
-                ExpenseId = 1
+                Name = "Alcohol"
+               
             };
 
             mockService.Setup(service => service.GetExpenseCategoryByIdAsync(expenseCategoryId)).ReturnsAsync(expectedExpenseCategory);
@@ -132,12 +132,12 @@ namespace UnitTests.ControllerTests
         public async Task CreateExpenseCategory_ValidExpenseCategory_ReturnsOkResultWithCreatedExpenseCategory()
         {
             // Arrange
-            var newCategory = new ExpenseCategory { Name = "Alcohol", ExpenseId = 1 };
+            var newCategory = new ExpenseCategory { Name = "Alcohol" };
             var createdExpenseCategory = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Alcohol",
-                ExpenseId = 1
+                Name = "Alcohol"
+               
             };
 
             mockService.Setup(service => service.AddExpenseCategoryAsync(newCategory)).ReturnsAsync(createdExpenseCategory);
@@ -173,8 +173,7 @@ namespace UnitTests.ControllerTests
             var newExpenseCategoy = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Alcohol",
-                ExpenseId = 1
+                Name = "Alcohol"
             };
 
             mockService.Setup(service => service.AddExpenseCategoryAsync(newExpenseCategoy)).ThrowsAsync(new Exception("Simulated error"));
@@ -197,14 +196,12 @@ namespace UnitTests.ControllerTests
             var existingExpenseCategoy = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Existing Expense Category",
-                ExpenseId = 1
+                Name = "Existing Expense Category"
             };
             var updatedExpenseCategoy = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Updated Expense Category",
-                ExpenseId = 1
+                Name = "Updated Expense Category"
             };
 
             mockService.Setup(service => service.GetExpenseCategoryByIdAsync(expenseId)).ReturnsAsync(existingExpenseCategoy);

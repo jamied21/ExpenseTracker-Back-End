@@ -52,7 +52,7 @@ namespace ExpenseTracker.Repo
 
             {
                 result.Name = expenseCategory.Name;
-                result.ExpenseId = expenseCategory.ExpenseId;
+                
                 
 
                 await _context.SaveChangesAsync();

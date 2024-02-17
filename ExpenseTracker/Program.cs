@@ -30,6 +30,8 @@ public class Program
         builder.Services.AddScoped<IExpenseService, ExpenseService>();
         builder.Services.AddScoped<IExpenseCategoryRepository, ExpenseCategoryRepository>();
         builder.Services.AddScoped<IExpenseCategoryService, ExpenseCategoryService>();
+        builder.Services.AddScoped<IUserRepository, UserRepository>();
+        builder.Services.AddScoped<IUserService, UserService>();
 
 
         //builder.Services.AddCors(options => options.AddDefaultPolicy(policy =>

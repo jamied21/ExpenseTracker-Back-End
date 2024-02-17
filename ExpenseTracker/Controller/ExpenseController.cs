@@ -2,6 +2,8 @@
         using ExpenseTracker.Models;
         using ExpenseTracker.Services;
         using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+using Newtonsoft.Json;
 
 
         namespace ExpenseTracker.Controller
@@ -10,12 +12,15 @@
             [Route("api/[controller]")]
             public class ExpenseController : ControllerBase
             {
-                private readonly IExpenseService expenseService;
+      
 
-                public ExpenseController(IExpenseService expenseService)
+        private readonly IExpenseService expenseService;
+
+        public ExpenseController(IExpenseService expenseService)
                 {
                     this.expenseService = expenseService;
-                }
+                   
+        }
         #region GetExpenses
 
                 [HttpGet]
@@ -68,10 +73,15 @@
 
         #region CreateExpense
                 [HttpPost]
-                public async Task<ActionResult<Expense>> CreateExpense(Expense expense)
+                public async Task<ActionResult<Expense>> CreateExpense( Expense expense)
                 {
+           
 
             try {
+
+               
+                
+
                 var result = await expenseService.AddExpenseAsync(expense);
 
                 if (result == null)
@@ -86,6 +96,7 @@
 
             catch (Exception)
             {
+               
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     "Error creating new expense record");
             }

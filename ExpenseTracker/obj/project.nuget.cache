@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "GOYHWhW7pLLfkqyNQZNNSidixCmzIevLZvOfnUuPtuRxJ0aa+qOup/cTswNgBTCUwfALdao37ktG7yDV7K5LkA==",
+  "dgSpecHash": "iNcAH2s2H66NLy1YGD30s8vPjqfBb8x7vjHg8d+wznN5B/1NfXifun6AKGnOR1isuy9pxmHJvw/4ke9kFsllqQ==",
   "success": true,
   "projectFilePath": "/Users/jamiedowner/Documents/Programming_Stuff/ExpenseTrackerProject/ExpenseTracker/ExpenseTracker.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,9 @@
     "/Users/jamiedowner/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.15/microsoft.entityframeworkcore.sqlserver.7.0.15.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/jamiedowner/.nuget/packages/microsoft.extensions.configuration/7.0.0/microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/jamiedowner/.nuget/packages/microsoft.extensions.configuration.binder/7.0.0/microsoft.extensions.configuration.binder.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.dependencymodel/7.0.0/microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
@@ -37,7 +39,10 @@
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.identity.stores/7.0.15/microsoft.extensions.identity.stores.7.0.15.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/jamiedowner/.nuget/packages/microsoft.extensions.logging.configuration/7.0.0/microsoft.extensions.logging.configuration.7.0.0.nupkg.sha512",
+    "/Users/jamiedowner/.nuget/packages/microsoft.extensions.logging.console/7.0.0/microsoft.extensions.logging.console.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.options/7.0.1/microsoft.extensions.options.7.0.1.nupkg.sha512",
+    "/Users/jamiedowner/.nuget/packages/microsoft.extensions.options.configurationextensions/7.0.0/microsoft.extensions.options.configurationextensions.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.identity.client/4.47.2/microsoft.identity.client.4.47.2.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.identity.client.extensions.msal/2.19.3/microsoft.identity.client.extensions.msal.2.19.3.nupkg.sha512",
