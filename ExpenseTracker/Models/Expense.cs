@@ -13,15 +13,17 @@ namespace ExpenseTracker.Models
 
 		public DateTime ExpenseDate { get; set; }
 
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
+
+        public int? CategoryId { get; set; }
 
         [JsonIgnore]
         public virtual User User { get; set; }
 
-		public int CategoryId {get; set;}
-
         [JsonIgnore]
         public virtual ExpenseCategory Category { get; set; }
+
+      
 
 
 

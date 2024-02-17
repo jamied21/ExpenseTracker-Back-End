@@ -1,10 +1,17 @@
 ﻿<Properties StartupConfiguration="{668FA448-D321-4D06-B209-4D60A0F6A20F}|https">
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExpenseTracker/Repo/UserRepository.cs">
+  <MonoDevelop.Ide.ItemProperties.ExpenseTracker PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExpenseTracker/Controller/ExpenseController.cs">
     <Files>
-      <File FileName="ExpenseTracker/Repo/IUserRepository.cs" />
-      <File FileName="ExpenseTracker/Repo/UserRepository.cs" Line="45" Column="46" />
-      <File FileName="ExpenseTracker/Services/UserService.cs" />
-      <File FileName="ExpenseTracker/Services/IUserService.cs" />
+      <File FileName="ExpenseTracker/Models/User.cs" Line="17" Column="1" />
+      <File FileName="ExpenseTracker/Models/ExpenseCategory.cs" Line="1" Column="1" />
+      <File FileName="ExpenseTracker/Models/Expense.cs" Line="1" Column="1" />
+      <File FileName="ExpenseTracker/Properties/launchSettings.json" Line="10" Column="16" />
+      <File FileName="ExpenseTracker/Controller/ExpenseController.cs" Line="7" Column="44" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,27 +21,17 @@
               <Node name="Dependencies" expanded="True">
                 <Node name="FrameworkReferences" expanded="True" />
               </Node>
-              <Node name="Properties" expanded="True" />
-              <Node name="Repo" expanded="True">
-                <Node name="UserRepository.cs" selected="True" />
+              <Node name="Controller" expanded="True">
+                <Node name="ExpenseController.cs" selected="True" />
               </Node>
-              <Node name="Services" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Repo" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="ExpenseTracker" expanded="True" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.ExpenseTracker PreferredExecutionTarget="/Applications/Safari.app" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
