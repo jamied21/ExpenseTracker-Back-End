@@ -11,5 +11,7 @@ namespace ExpenseTracker.Services
         Task<User> CreateUserAsync(User user);
         Task<User> UpdateUserAsync(int userId, User user);
         Task DeleteUserAsync(int userId);
+
+
     }
 }

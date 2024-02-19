@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "rROZIyTCpIyUhkJPLbiW4doDVziIgXZPsnKPpoPA7MAre42Iv59AVav6+/KmsKj5K0wAhRuvEx8zYfnY67SFIw==",
+  "dgSpecHash": "y3TVFE4QjZ2w+yiod2YOoYg/yTjffN1Vy36iqcF9PZt5/ydGDGgGj20YiDF5I0J5pld8mKoKacx+H4sYzOASJA==",
   "success": true,
   "projectFilePath": "/Users/jamiedowner/Documents/Programming_Stuff/ExpenseTrackerProject/UnitTests/UnitTests.csproj",
   "expectedPackageFiles": [
     "/Users/jamiedowner/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/Users/jamiedowner/.nuget/packages/bcrypt.net-core/1.6.0/bcrypt.net-core.1.6.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.aspnetcore.cors/2.2.0/microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",

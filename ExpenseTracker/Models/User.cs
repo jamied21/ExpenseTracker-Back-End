@@ -7,9 +7,11 @@ namespace ExpenseTracker.Models
 
 		public string Username { get; set; }
 
-		public string Password { get; set; }
+		public byte[] PasswordHash { get; set; }
 
-		public ICollection<Expense> Expenses { get; set; } = new List<Expense>();
+        public byte[] PasswordSalt { get; set; }
+
+        public ICollection<Expense> Expenses { get; set; } = new List<Expense>();
 
 	}
 }

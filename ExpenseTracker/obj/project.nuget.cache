@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "iNcAH2s2H66NLy1YGD30s8vPjqfBb8x7vjHg8d+wznN5B/1NfXifun6AKGnOR1isuy9pxmHJvw/4ke9kFsllqQ==",
+  "dgSpecHash": "Kf4HhfmedoH8AGTj6W3p6w5YUMae+9tKs/xJ6qRLVIUMQbclRoM3/0aESO1feUQmb1eNXp2PdXiLER3VyS9ntQ==",
   "success": true,
   "projectFilePath": "/Users/jamiedowner/Documents/Programming_Stuff/ExpenseTrackerProject/ExpenseTracker/ExpenseTracker.csproj",
   "expectedPackageFiles": [
     "/Users/jamiedowner/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/Users/jamiedowner/.nuget/packages/bcrypt.net-core/1.6.0/bcrypt.net-core.1.6.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.aspnetcore.cors/2.2.0/microsoft.aspnetcore.cors.2.2.0.nupkg.sha512",
     "/Users/jamiedowner/.nuget/packages/microsoft.aspnetcore.cryptography.internal/7.0.15/microsoft.aspnetcore.cryptography.internal.7.0.15.nupkg.sha512",
