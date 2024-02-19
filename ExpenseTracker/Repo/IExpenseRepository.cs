@@ -12,6 +12,10 @@ namespace ExpenseTracker.Repo
 		Task<Expense> CreateExpense(Expense expense);
 		Task<Expense> UpdateExpense(Expense expense);
 
-	}
+        Task<User> GetUserByIdAsync(int? userId);
+        Task<ExpenseCategory> GetCategoryByIdAsync(int? categoryId);
+
+
+    }
 }
 

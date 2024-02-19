@@ -34,15 +34,15 @@ namespace UnitTests.ServiceTests
             var expenseCategoryToAdd = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Food",
-                ExpenseId = 1
+                Name = "Food"
+               
             };
 
             var addedExpenseCategory = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Travel",
-                ExpenseId = 1
+                Name = "Travel"
+                
             };
 
             mockExpensecategoryRepository
@@ -79,8 +79,8 @@ namespace UnitTests.ServiceTests
             var addedExpenseCategory = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Travel",
-                ExpenseId = 1
+                Name = "Travel"
+             
             };
 
             mockExpensecategoryRepository
@@ -107,15 +107,15 @@ namespace UnitTests.ServiceTests
             var expenseCategoryExisting = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Food",
-                ExpenseId = 1
+                Name = "Food"
+                
             };
 
             var addedExpenseUpdated = new ExpenseCategory
             {
                 Id = 1,
-                Name = "Travel",
-                ExpenseId = 1
+                Name = "Travel"
+                
             };
 
             mockExpensecategoryRepository
@@ -146,10 +146,10 @@ namespace UnitTests.ServiceTests
         {
             //Arrange
             var expenseCategoryList = new List<ExpenseCategory> { new ExpenseCategory { Id = 1,
-                Name = "Food",
-                ExpenseId = 1 }, new ExpenseCategory { Id = 2,
-                Name = "Travel",
-                ExpenseId = 2 } };
+                Name = "Food"
+                }, new ExpenseCategory { Id = 2,
+                Name = "Travel"
+                } };
 
             mockExpensecategoryRepository.Setup(repo => repo.GetAllExpenseCategories()).ReturnsAsync(expenseCategoryList);
 

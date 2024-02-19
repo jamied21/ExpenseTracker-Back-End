@@ -3,6 +3,7 @@ using System;
 using ExpenseTracker.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ExpenseTracker.Migrations
 {
     [DbContext(typeof(ExpenseTrackerContext))]
-    partial class ExpenseTrackerContextModelSnapshot : ModelSnapshot
+    [Migration("20240217095318_nullID")]
+    partial class nullID
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -37,6 +40,9 @@ namespace ExpenseTracker.Migrations
                         .IsRequired()
                         .HasColumnType("integer");
 
+                    b.Property<int?>("ExpenseCategoryId")
+                        .HasColumnType("integer");
+
                     b.Property<DateTime>("ExpenseDate")
                         .HasColumnType("timestamp with time zone");
 
@@ -52,6 +58,8 @@ namespace ExpenseTracker.Migrations
 
                     b.HasIndex("CategoryId");
 
+                    b.HasIndex("ExpenseCategoryId");
+
                     b.HasIndex("UserId");
 
                     b.ToTable("Expenses");
@@ -64,6 +72,9 @@ namespace ExpenseTracker.Migrations
                         .HasColumnType("integer");
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("ExpenseId")
+                        .HasColumnType("integer");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -97,17 +108,25 @@ namespace ExpenseTracker.Migrations
 
             modelBuilder.Entity("ExpenseTracker.Models.Expense", b =>
                 {
-                    b.HasOne("ExpenseTracker.Models.ExpenseCategory", null)
-                        .WithMany("Expenses")
+                    b.HasOne("ExpenseTracker.Models.ExpenseCategory", "Category")
+                        .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("ExpenseTracker.Models.User", null)
+                    b.HasOne("ExpenseTracker.Models.ExpenseCategory", null)
+                        .WithMany("Expenses")
+                        .HasForeignKey("ExpenseCategoryId");
+
+                    b.HasOne("ExpenseTracker.Models.User", "User")
                         .WithMany("Expenses")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Category");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("ExpenseTracker.Models.ExpenseCategory", b =>

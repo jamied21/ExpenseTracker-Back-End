@@ -164,7 +164,7 @@ namespace UnitTests.ControllerTests
             var result = await expenseController.CreateExpense(invalidExpense);
 
             // Assert
-            Assert.IsInstanceOf<BadRequestResult>(result.Result);
+            Assert.IsInstanceOf<BadRequestObjectResult>(result.Result);
         }
 
         [Test]

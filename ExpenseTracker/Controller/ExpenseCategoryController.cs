@@ -167,7 +167,7 @@ namespace ExpenseTracker.Controller
 
 
         #region GetExpensesByCategoryId
-
+        [HttpGet("Expenses/{id:int}")]
         public async Task<ActionResult<IEnumerable<Expense>>> GetExpensesByCategoryId(int id)
 
         {

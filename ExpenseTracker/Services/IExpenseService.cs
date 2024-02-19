@@ -13,6 +13,10 @@ namespace ExpenseTracker.Services
         Task<Expense> UpdateExpenseByIdAsync(int id, Expense expense);
 
         Task<IEnumerable<ExpenseCategory>> GetAllExpenseCategoriesAsync();
+
+        Task<User> GetUserByIdAsync(int? userId);
+        Task<ExpenseCategory> GetCategoryByIdAsync(int? categoryId);
+      
     }
 }
 

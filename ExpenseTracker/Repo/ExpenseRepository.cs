@@ -65,6 +65,16 @@ namespace ExpenseTracker.Repo
         {
             return await _context.ExpenseCategories.ToListAsync();
         }
+
+        public async Task<User> GetUserByIdAsync(int? userId)
+        {
+            return await _context.Users.FindAsync(userId);
+        }
+
+        public async Task<ExpenseCategory> GetCategoryByIdAsync(int? categoryId)
+        {
+           return await _context.ExpenseCategories.FindAsync(categoryId);
+        }
     }
 }
 
