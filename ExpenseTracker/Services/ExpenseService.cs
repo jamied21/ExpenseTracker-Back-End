@@ -36,9 +36,19 @@ namespace ExpenseTracker.Services
             return await expenseRepository.GetExpenses();
         }
 
+        public async Task<ExpenseCategory> GetCategoryByIdAsync(int? categoryId)
+        {
+            return await expenseRepository.GetCategoryByIdAsync(categoryId);
+        }
+
         public async Task<Expense> GetExpenseByIdAsync(int expenseId)
         {
             return await expenseRepository.GetExpenseById(expenseId);
+        }
+
+        public async Task<User> GetUserByIdAsync(int? userId)
+        {
+            return await expenseRepository.GetUserByIdAsync(userId);
         }
 
         public async Task<Expense> UpdateExpenseByIdAsync(int id, Expense expense)

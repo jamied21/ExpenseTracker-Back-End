@@ -73,26 +73,40 @@ using Newtonsoft.Json;
 
         #region CreateExpense
                 [HttpPost]
-                public async Task<ActionResult<Expense>> CreateExpense( Expense expense)
+                public async Task<ActionResult<Expense>> CreateExpense(Expense expense)
                 {
            
 
             try {
 
-               
-                
 
+
+
+                //var existingUser = await expenseService.GetUserByIdAsync(expense.UserId);
+                //var existingCategory = await expenseService.GetCategoryByIdAsync(expense.CategoryId);
+
+                //if (existingUser == null || existingCategory == null)
+                //{
+                //    // Handle the case where the user or category is not found
+                //    // You might want to return a BadRequest or handle it accordingly
+                //    return BadRequest("Invalid userId or categoryId. Make sure they exist in the database.");
+                //}
+
+                //// Assign the existing user and category to the expense
+                //expense.User = existingUser;
+                //expense.Category = existingCategory;
+
+                // Add the expense to the database
                 var result = await expenseService.AddExpenseAsync(expense);
 
                 if (result == null)
                 {
-                    return BadRequest();
-
+                      return BadRequest("Error creating expense.");
                 }
 
                 return Ok(result);
 
-                        }
+            }
 
             catch (Exception)
             {

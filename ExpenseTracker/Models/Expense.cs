@@ -18,14 +18,14 @@ namespace ExpenseTracker.Models
 
         public int? UserId { get; set; }
 
-        [JsonIgnore]
-        public virtual User User { get; set; }
+       // [JsonIgnore]
+       // public virtual User User { get; set; }
 
        
         public int? CategoryId { get; set; }
 
-        [JsonIgnore]
-        public virtual ExpenseCategory Category { get; set; }
+       // [JsonIgnore]
+       // public virtual ExpenseCategory Category { get; set; }
 
       
 

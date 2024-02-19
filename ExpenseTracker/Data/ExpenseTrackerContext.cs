@@ -37,17 +37,18 @@ namespace ExpenseTracker.Data
 
             //Define entity relationships
 
-            modelBuilder.Entity<Expense>()
-             .HasOne(e => e.Category)
-             .WithMany(c => c.Expenses)
-             .HasForeignKey(e => e.CategoryId);
+            modelBuilder.Entity<ExpenseCategory>()
+             .HasMany(c => c.Expenses)
+             .WithOne()
+             .HasForeignKey(e => e.CategoryId)
+            .IsRequired();
 
-            modelBuilder.Entity<Expense>()
-           .HasOne(e => e.User)
-           .WithMany(u => u.Expenses)
-           .HasForeignKey(e => e.UserId);
+            modelBuilder.Entity<User>()
+           .HasMany(c => c.Expenses)
+             .WithOne()
+             .HasForeignKey(e => e.UserId)
+            .IsRequired();
 
-           
         }
 
 
