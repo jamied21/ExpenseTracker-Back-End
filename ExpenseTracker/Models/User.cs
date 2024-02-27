@@ -9,7 +9,8 @@ namespace ExpenseTracker.Models
 
 		public string Password { get; set; }
 
-		public ICollection<Expense> Expenses { get; set; } = new List<Expense>();
+		//To be added in once login page is done
+		//public ICollection<Expense> Expenses { get; set; } = new List<Expense>();
 
 	}
 }
