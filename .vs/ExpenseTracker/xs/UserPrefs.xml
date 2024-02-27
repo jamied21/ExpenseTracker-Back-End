@@ -1,51 +1,32 @@
 ﻿<Properties StartupConfiguration="{668FA448-D321-4D06-B209-4D60A0F6A20F}|http">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.ExpenseTracker PreferredExecutionTarget="/Applications/Safari.app" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ExpenseTracker PreferredExecutionTarget="/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ExpenseTracker/Controller/ExpenseCategoryController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ExpenseTracker/Models/Expense.cs">
     <Files>
-      <File FileName="ExpenseTracker/Models/Expense.cs" Line="27" Column="9" />
-      <File FileName="ExpenseTracker/Controller/ExpenseController.cs" Line="85" Column="74" />
-      <File FileName="ExpenseTracker/Services/ExpenseService.cs" Line="39" Column="70" />
-      <File FileName="ExpenseTracker/Repo/ExpenseRepository.cs" Line="74" Column="69" />
-      <File FileName="ExpenseTracker/Services/IExpenseService.cs" Line="18" Column="56" />
-      <File FileName="UnitTests/ControllerTests/ExpenseControllerTests.cs" Line="88" Column="50" />
-      <File FileName="ExpenseTracker/Data/ExpenseTrackerContext.cs" Line="1" Column="1" />
-      <File FileName="ExpenseTracker/Repo/IExpenseRepository.cs" Line="15" Column="41" />
-      <File FileName="ExpenseTracker/Models/User.cs" Line="1" Column="1" />
-      <File FileName="ExpenseTracker/Models/ExpenseCategory.cs" Line="1" Column="1" />
-      <File FileName="ExpenseTracker/Controller/ExpenseCategoryController.cs" Line="116" Column="18" />
+      <File FileName="ExpenseTracker/Models/Expense.cs" Line="8" Column="3" />
+      <File FileName="ExpenseTracker/Models/User.cs" />
+      <File FileName="ExpenseTracker/Data/ExpenseTrackerContext.cs" />
+      <File FileName="ExpenseTracker/Repo/ExpenseRepository.cs" />
+      <File FileName="ExpenseTracker/Services/ExpenseService.cs" />
+      <File FileName="ExpenseTracker/Controller/ExpenseController.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ExpenseTracker" expanded="True">
-            <Node name="ExpenseTracker">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-                <Node name="PackageDependencies" expanded="True" />
+            <Node name="ExpenseTracker" expanded="True">
+              <Node name="Data" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Expense.cs" selected="True" />
               </Node>
-              <Node name="Controller" expanded="True">
-                <Node name="ExpenseCategoryController.cs" selected="True" />
-              </Node>
-              <Node name="Data" expanded="True">
-                <Node name="Migrations" expanded="True" />
-              </Node>
-              <Node name="Models" expanded="True" />
-            </Node>
-            <Node name="UnitTests">
-              <Node name="ControllerTests" expanded="True" />
+              <Node name="Services" expanded="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="ExpenseTracker" selected="True" />
         </State>
       </Pad>
     </Pads>

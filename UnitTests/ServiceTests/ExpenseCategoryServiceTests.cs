@@ -171,12 +171,12 @@ namespace UnitTests.ServiceTests
                 Name = "Beer",
                 Amount = 30.00M,
                 ExpenseDate = DateTime.Now,
-                UserId = 1,
+                //UserId = 1,
                 CategoryId = 1}, new Expense {Id = 2,
                 Name = "Food",
                 Amount = 15.00M,
                 ExpenseDate = DateTime.Now,
-                UserId = 1,
+                //UserId = 1,
                 CategoryId = 1 } };
 
 

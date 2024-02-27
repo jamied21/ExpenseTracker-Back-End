@@ -50,7 +50,7 @@ namespace ExpenseTracker.Repo
                 result.Name = expense.Name;
                 result.Amount = expense.Amount;
                 result.ExpenseDate = expense.ExpenseDate;
-                result.UserId = expense.UserId;
+                //result.UserId = expense.UserId;
                 result.CategoryId = expense.CategoryId;
 
                 await _context.SaveChangesAsync();

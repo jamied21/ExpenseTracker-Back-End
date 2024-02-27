@@ -40,14 +40,16 @@ namespace ExpenseTracker.Data
             modelBuilder.Entity<ExpenseCategory>()
              .HasMany(c => c.Expenses)
              .WithOne()
-             .HasForeignKey(e => e.CategoryId)
-            .IsRequired();
+             .HasForeignKey(e => e.CategoryId);
+            //.IsRequired();
 
-            modelBuilder.Entity<User>()
-           .HasMany(c => c.Expenses)
-             .WithOne()
-             .HasForeignKey(e => e.UserId)
-            .IsRequired();
+
+        // To be added in once login page is setup and authentication is done
+           // modelBuilder.Entity<User>()
+           //.HasMany(c => c.Expenses)
+           //  .WithOne()
+           //  .HasForeignKey(e => e.UserId);
+           // //.IsRequired();
 
         }
 
